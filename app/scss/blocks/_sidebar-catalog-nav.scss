@@ -1,0 +1,32 @@
+.sidebar-catalog-nav {
+  @include clear-list();
+}
+
+.sidebar-catalog-nav__item {
+  border-bottom: 1px solid #d8d8d8;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sidebar-catalog-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 60px;
+  color: currentColor;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #e85;
+  }
+}

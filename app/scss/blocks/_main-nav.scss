@@ -1,0 +1,44 @@
+.main-nav {
+  background-color: $primary-color;
+}
+
+.main-nav__inner {
+  @include container();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__items,
+.main-nav__user-items {
+  @include clear-list();
+  display: flex;
+}
+
+.main-nav__items {
+  margin-right: 50px;
+  margin-left: -25px;
+}
+
+.main-nav__item,
+.main-nav__user-item {
+  color: #fff;
+}
+
+.main-nav__link,
+.main-nav__user-link {
+  display: block;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  color: currentColor;
+
+  &:hover {
+    color: #fff;
+    background-color: $base-color;
+  }
+}
+
+.main-nav__link {
+  padding-left: 25px;
+  padding-right: 25px;
+}

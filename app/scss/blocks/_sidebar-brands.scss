@@ -1,0 +1,23 @@
+.sidebar-brands {
+  @include clear-list();
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.sidebar-brand {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar-brand__link {
+  display: block;
+  padding: 6px 12px;
+  color: #ffffff;
+  background-color: $primary-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #333;
+  }
+}
