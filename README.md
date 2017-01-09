@@ -10,7 +10,9 @@ app/
    |--functions.scss
    |--mixins.scss
    |--styles.scss
-|--img/
+|--images/
+   |--svg-icons/
+   |--svg-symbols/ (для объединения в один файл symbols.svg)
 |--js/
    |--plugins/
 |--fonts/
