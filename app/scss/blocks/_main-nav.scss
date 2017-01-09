@@ -13,6 +13,7 @@
 .main-nav__user-items {
   @include clear-list();
   display: flex;
+  font-size: rem(15);
 }
 
 .main-nav__items {
@@ -41,4 +42,16 @@
 .main-nav__link {
   padding-left: 25px;
   padding-right: 25px;
+
+  // <<< Удалить
+  &[href=""] {
+    background-color: #BDBDBD;
+  }
+  // Удалить >>>
+}
+
+@media (max-width: $media-laptop-down) {
+  .main-nav {
+    display: none;
+  }
 }

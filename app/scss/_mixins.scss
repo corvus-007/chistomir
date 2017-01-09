@@ -48,7 +48,7 @@
 }
 
 /// Подстраивание изображений (и не только) под заданные пропорции
-@mixin responsiveObject($target-width, $target-height) {
+@mixin responsiveObject($target-width: 1, $target-height: 1) {
   display: block;
   position: relative;
   height: 0;

@@ -1,0 +1,65 @@
+.about-slider {
+  padding-left: 75px;
+  padding-right: 75px;
+
+  .slick-arrow {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: none;
+    z-index: 1;
+    overflow: hidden;
+    text-indent: -1000px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: filter 0.25s;
+
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:hover {
+      filter: brightness(130%);
+    }
+
+    &.slick-disabled {
+      filter: brightness(150%) grayscale(100%);
+      cursor: default;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23007fb6' fill-rule='evenodd' d='M31 15H3.4l8.3-8.3c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0l-10 10c-.3.3-.3 1 0 1.3l10 10c.4.3 1 .3 1.4 0 .4-.5.4-1 0-1.5l-8.3-8H31c.7 0 1-.4 1-1s-.3-1-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23007fb6' fill-rule='evenodd' d='M32 16c0-.3 0-.5-.3-.7l-10-10c-.3-.4-1-.4-1.3 0-.4.4-.4 1 0 1.4l8.2 8.3H1c-.6 0-1 .5-1 1s.4 1 1 1h27.6l-8.2 8.3c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l10-10 .2-.7z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.about-slide {
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.about-slide__image {
+  @include responsiveObject(521, 392);
+}

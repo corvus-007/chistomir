@@ -1,5 +1,6 @@
 .sidebar-catalog-nav {
   @include clear-list();
+  font-size: rem(15);
 }
 
 .sidebar-catalog-nav__item {

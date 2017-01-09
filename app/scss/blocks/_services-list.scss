@@ -1,0 +1,24 @@
+.services-list {
+  @include clear-list();
+}
+
+.services-item {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.services-item__icon-holder {
+  margin-bottom: 15px;
+}
+
+.services-item__icon {
+  width: rem(64);
+  height: rem(64);
+}
+
+.services-item__title {
+  display: block;
+  font-size: rem(15);
+  line-height: 1.1;
+  font-weight: 600;
+}

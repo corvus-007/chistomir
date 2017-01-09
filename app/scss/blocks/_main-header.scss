@@ -14,14 +14,20 @@
 .main-header__column {
   margin-left: 5%;
   &--logo {
+    // flex-shrink: 0;
     margin-left: 0;
     margin-right: auto;
   }
 }
 
+.main-header__logo {
+  border-bottom: none;
+}
+
 .main-header__info {
   margin-bottom: 0;
   text-align: right;
+  font-size: rem(15);
 }
 
 .main-header__phones {
