@@ -1,0 +1,36 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  color: #d8d8d8;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    pointer-events: none;
+  }
+
+  select {
+    padding-right: 34px;
+    appearance: none;
+    color: currentColor;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  option {
+    color: $base-color;
+    &:disabled {
+      color: #d8d8d8;
+    }
+  }
+}

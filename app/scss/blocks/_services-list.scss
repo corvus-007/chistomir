@@ -1,5 +1,8 @@
 .services-list {
-  @include clear-list();
+  margin-top: 0;
+  margin-bottom: -15px;
+  padding: 0;
+  list-style: none;
 }
 
 .services-item {
@@ -9,6 +12,22 @@
 
 .services-item__icon-holder {
   margin-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: rem(40);
+    height: rem(40);
+    margin: auto;
+    border-radius: 50%;
+    background-color: $primary-color-light;
+    z-index: -1;
+  }
 }
 
 .services-item__icon {
@@ -19,6 +38,9 @@
 .services-item__title {
   display: block;
   font-size: rem(15);
-  line-height: 1.1;
   font-weight: 600;
+
+  span {
+    display: block;
+  }
 }

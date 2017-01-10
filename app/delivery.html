@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Доставка – Чистомир</title>
+  <link rel="stylesheet" href="style-min.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    @@include('blocks/main-header.html')
+    <main class="main">
+      <aside class="main-sidebar">
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Каталог тваров</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-catalog-nav.html')
+          </div>
+        </section>
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Бренды</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-brands.html')
+          </div>
+        </section>
+      </aside>
+      <article class="main-content">
+        <h1>Доставка</h1>
+        <p><b>Внимание!</b> Доставка в пределах г. Брянска крупной уборочной техники или при заказе товаров более чем на 10 000 рублей, осуществляется бесплатно!</p>
+
+        <p>Доставка товаров в регионы осуществляется транспортными компаниями-партнерами или другими транспортными компаниями, работающими в Брянске.</p>
+
+        <div class="main-content-incut">
+          <div class="delivery-companies">
+            <section class="delivery-company">
+              <div class="delivery-company__image-area">
+                <img src="images/deliveries/dellin.png" srcset="images/deliveries/dellin@2x.png 2x" alt="Логотип транспотрной компании «Деловые линии»">
+              </div>
+              <div class="delivery-company__text-area">
+                <div class="delivery-company__headline">
+                  <h2 class="delivery-company__title">Деловые линии</h2>
+                  <a class="delivery-company__link" href="http://www.dellin.ru/" target="_blank">
+                    <svg class="delivery-company__icon-link svg-icon">
+                      <use xlink:href="images/symbols.svg#url-link"></use>
+                    </svg>
+                    <span class="delivery-company__text-link">www.dellin.ru</span>
+                  </a>
+                </div>
+                <p>Осуществляют доставку сборных грузов и посылок, автомобильные, контейнерные, авиа- и железнодорожные перевозки в любом направлении по территории Российской федерации, а также выполняет погрузочно-разгрузочные работы и упаковку груза.</p>
+                <p>Сегодня транспортная компания осуществляет доставку груза (посылок) более чем в 1000 населенных пунктов России.</p>
+                <p>Имеет функцию определения местонахождения груза по номеру накладной.</p>
+                <p>Для примерного расчета стоимости оказания услуг доставки вы можете <a href="">воспользоваться калькулятором</a>.</p>
+              </div>
+            </section>
+            <section class="delivery-company">
+              <div class="delivery-company__image-area">
+                <img src="images/deliveries/ae5000.png" srcset="images/deliveries/ae5000@2x.png 2x" alt="Логотип транспотрной компании «Автотрейдинг»">
+              </div>
+              <div class="delivery-company__text-area">
+                <div class="delivery-company__headline">
+                  <h2 class="delivery-company__title">Автотрейдинг</h2>
+                  <a class="delivery-company__link" href="http://www.ae5000.ru" target="_blank">
+                    <svg class="delivery-company__icon-link svg-icon">
+                      <use xlink:href="images/symbols.svg#url-link"></use>
+                    </svg>
+                    <span class="delivery-company__text-link">www.ae5000.ru</span>
+                  </a>
+                </div>
+                <p>Доставка сборных грузов весом от 1 килограмма по территории Российской Федерации.</p>
+                <p>Консолидация грузов происходит на собственных складских терминалах, что позволяет добиваться высокой степени сохранности сдаваемых грузов, разрабатывать инновационные подходы для улучшения взаимодействия с клиентами и партнерами.</p>
+                <p>Транспортировка грузов осуществляется в опломбированной упаковке при участии службы охраны и сопровождения под постоянным спутниковым мониторингом автомобилей в пути.</p>
+                <p>Филиальная сеть организации насчитывает более 80 представительств и охватывает все субъекты федерации.</p>
+                <p>Вы можете получить информацию о местонахождении и статусе вашего груза в любое время дня и ночи.</p>
+                <p>Рассчитать стоимость доставки грузов <a href="">можно при помощи калькулятора</a>.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+  @@include('blocks/main-footer.html')
+</body>
+</html>

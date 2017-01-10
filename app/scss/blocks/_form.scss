@@ -19,16 +19,22 @@
 }
 
 .form-control {
-  padding: em(14, 18) em(24, 18);
+  padding: em(10, 15) em(17, 15);
   width: 100%;
   outline: none;
-  border: 2px solid transparent;
-  background: #edeef1;
+  border: 2px solid #d8d8d8;
+  background: #fff;
   font: inherit;
-  font-size: rem(18);
+  font-size: rem(15);
+  font-weight: 600;
   line-height: normal;
   box-sizing: border-box;
   transition: 0.3s;
+
+  &::placeholder {
+    opacity: 1;
+    color: #d8d8d8;
+  }
 }
 
 textarea.form-control {
@@ -41,7 +47,7 @@ textarea.form-control {
 }
 
 .form-control:focus {
-  border-color: mix(#000, #e3e3e1, 7%);
+  border-color: mix(#000, #d8d8d8, 7%);
   background: #fff;
 }
 

@@ -40,7 +40,6 @@ body {
 
 .main {
   @include container();
-  
 
   @media (min-width: $media-laptop-up) {
     display: flex;
@@ -78,9 +77,11 @@ body {
 
 .main-content {
   padding-bottom: rem(40);
-  flex-grow: 0;
-  flex-shrink: 1;
-  overflow: hidden;
+  min-width: 0;
+
+  @media (min-width: $media-laptop-up) {
+    flex-grow: 1;
+  }
 }
 
 .container {

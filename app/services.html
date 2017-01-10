@@ -25,7 +25,7 @@
           </div>
         </section>
       </aside>
-      <div class="main-content">
+      <article class="main-content">
         <h1>Услуги</h1>
         <p>В ходе уборки используются моющие средства производства <a href="">"PRAMOL"</a> (Швейцария), <a href="">DR. SCNELL</a> (Германия) и других ведущих фирм Европы.</p>
 
@@ -37,7 +37,7 @@
                   <use xlink:href="images/symbols.svg#vacuum-cleaner"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Предпродажная уборка квартир</b>
+              <b class="services-item__title">Предпродажная <span>уборка квартир</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -45,7 +45,7 @@
                   <use xlink:href="images/symbols.svg#house"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Уборка коттеджей и домов</b>
+              <b class="services-item__title">Уборка коттеджей <span>и домов</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -53,7 +53,7 @@
                   <use xlink:href="images/symbols.svg#bucket"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Уборка офисных помещений</b>
+              <b class="services-item__title">Уборка офисных <span>помещений</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -61,7 +61,7 @@
                   <use xlink:href="images/symbols.svg#apron"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Уборка торговых помещений</b>
+              <b class="services-item__title">Уборка торговых <span>помещений</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -69,7 +69,7 @@
                   <use xlink:href="images/symbols.svg#dustpan"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Уборка после ремонта</b>
+              <b class="services-item__title">Уборка после <span>ремонта</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -77,7 +77,7 @@
                   <use xlink:href="images/symbols.svg#garbage"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Уборка складских помещений</b>
+              <b class="services-item__title">Уборка складских <span>помещений</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -85,7 +85,7 @@
                   <use xlink:href="images/symbols.svg#mop"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Ежедневная уборка квартир</b>
+              <b class="services-item__title">Ежедневная <span>уборка квартир</span></b>
             </li>
             <li class="services-item col-mobile-up-6 col-tablet-up-3">
               <div class="services-item__icon-holder">
@@ -93,19 +93,49 @@
                   <use xlink:href="images/symbols.svg#shirt"></use>
                 </svg>
               </div>
-              <b class="services-item__title">Домработница (почас. оплата)</b>
+              <b class="services-item__title">Домработница <span>(почас. оплата)</span></b>
             </li>
           </ul>
         </div>
 
         <div class="main-content-incut">
-          asdf
+          <form class="cta-form" action="" method="post">
+            <div class="grid">
+              <label class="form-item col-tablet-up-4">
+                <span class="form-label visuallyhidden">Выберите услугу</span>
+                <div class="custom-select">
+                  <select class="form-control" name="" id="">
+                    <option disabled selected>ВЫБЕРИТЕ УСЛУГУ</option>
+                    <option value="op1">Услуга 1</option>
+                    <option value="op2">Услуга 2</option>
+                    <option value="op3">Услуга 3</option>
+                  </select>
+                </div>
+              </label>
+              <label class="form-item col-tablet-up-4">
+                <span class="form-label visuallyhidden">Номер телефона</span>
+                <input class="form-control" type="tel" placeholder="+7" name="" id="">
+              </label>
+              <div class="form-item col-tablet-up-4">
+                <button class="button form-submit" type="button">Заказать услугу</button>
+              </div>
+            </div>
+          </form>
         </div>
         
         <div class="main-content-incut">
-          asdf
+          <h2>Специализированные работы</h2>
+
+          <ul class="custom-list">
+            <li>Мойка окон и фасадов, в том числе методом промышленного альпинизма, или с использованием автовышки</li>
+            <li>Химическая чистка ковровых покрытий и мягкой мебели на дому</li>
+            <li>Уборка производственных и складских помещений машинным способом</li>
+            <li>Глубокая размывка твердых покрытий</li>
+            <li>Чиска экскалаторов и траволаторов</li>
+            <li>Сухая чистка ковров</li>
+          </ul>
         </div>
-      </div>
+      </article>
     </main>
   </div>
   @@include('blocks/main-footer.html')

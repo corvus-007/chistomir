@@ -19,6 +19,7 @@
   padding-right: 60px;
   color: currentColor;
 
+  &::before,
   &::after {
     content: "";
     position: absolute;
@@ -26,8 +27,19 @@
     bottom: 0;
     right: 5px;
     margin: auto;
-    width: 10px;
-    height: 10px;
-    background-color: #e85;
+  }
+
+  &::before {
+    width: 9px;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  &::after {
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
   }
 }

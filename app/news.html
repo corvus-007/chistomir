@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новости – Чистомир</title>
+  <link rel="stylesheet" href="style-min.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    @@include('blocks/main-header.html')
+    <main class="main">
+      <aside class="main-sidebar">
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Каталог тваров</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-catalog-nav.html')
+          </div>
+        </section>
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Бренды</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-brands.html')
+          </div>
+        </section>
+      </aside>
+      <article class="main-content">
+        <h1>Новости</h1>
+        <p>Мы регулярно публикуем новости и прочие события, которыми хотим поделиться. Следите за обновлениями!</p>
+
+        <div class="main-content-incut">
+          <div class="archive-events grid">
+            <article class="archive-event col-tablet-up-6">
+              <a href="" class="archive-event__link">
+                <div class="archive-event__image-area">
+                  <div class="archive-event__image-holder">
+                    <img src="images/news/01.jpg" srcset="images/news/01@2x.jpg 2x" alt="">
+                  </div>
+                </div>
+                <div class="archive-event__text-area">
+                  <time class="archive-event__date" datetime="2016-12-24">24/12/2016</time>
+                  <h2 class="archive-event__title">Дозаторы SEKO ставим даром</h2>
+                </div>
+              </a>
+            </article>
+            <article class="archive-event col-tablet-up-6">
+              <a href="" class="archive-event__link">
+                <div class="archive-event__image-area">
+                  <div class="archive-event__image-holder">
+                    <img src="images/news/02.jpg" srcset="images/news/02@2x.jpg 2x" alt="">
+                  </div>
+                </div>
+                <div class="archive-event__text-area">
+                  <time class="archive-event__date" datetime="2016-09-13">13/09/2016</time>
+                  <h2 class="archive-event__title">Купи пылесос SEBO и получи подарок</h2>
+                </div>
+              </a>
+            </article>
+            <article class="archive-event col-tablet-up-6">
+              <a href="" class="archive-event__link">
+                <div class="archive-event__image-area">
+                  <div class="archive-event__image-holder">
+                    <img src="images/news/03.jpg" srcset="images/news/03@2x.jpg 2x" alt="">
+                  </div>
+                </div>
+                <div class="archive-event__text-area">
+                  <time class="archive-event__date" datetime="2016-08-11">11/08/2016</time>
+                  <h2 class="archive-event__title">Убрано 18 000 кв. м. с помощью техники CLEANFIX</h2>
+                </div>
+              </a>
+            </article>
+            <article class="archive-event col-tablet-up-6">
+              <a href="" class="archive-event__link">
+                <div class="archive-event__image-area">
+                  <div class="archive-event__image-holder">
+                    <img src="images/news/04.jpg" srcset="images/news/04@2x.jpg 2x" alt="">
+                  </div>
+                </div>
+                <div class="archive-event__text-area">
+                  <time class="archive-event__date" datetime="2016-08-07">07/08/2016</time>
+                  <h2 class="archive-event__title">Компания “Чистомир” — надежный деловой партнер в Брянске</h2>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+  @@include('blocks/main-footer.html')
+</body>
+</html>
