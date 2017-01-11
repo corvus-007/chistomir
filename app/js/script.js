@@ -50,4 +50,83 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   /*=====  End of Input mask  ======*/
+
+  var contactsMap = document.querySelector('#contacts-map');
+
+  if (contactsMap) {
+    initializeMap();
+  }
 });
+
+
+// Инициализация карты
+function initializeMap() {
+
+  var mapLocations = [];
+  var locationPlaces = document.querySelectorAll('[data-place-location]');
+  var ICONPATH = 'images/svg-icons/pin.svg';
+  var locationCenter = null;
+
+  var contactsPlaces = document.querySelector('.contacts-places-map');
+
+  Array.prototype.forEach.call(locationPlaces, function(place, i) {
+    var placeItem = {};
+
+    if (i === 0) {
+      locationCenter = getLocationCenter(place);
+      place.classList.add('contacts-place-map--active');
+    }
+
+    placeItem.position = getLocationCenter(place);
+    placeItem.title = place.querySelector('.contacts-place-map__caption').textContent;
+    mapLocations.push(placeItem);
+
+  });
+
+
+  var mapProp = createProp(locationCenter);
+  var map = new google.maps.Map(document.getElementById("contacts-map"), mapProp);
+
+  mapLocations.forEach(function(mapLocation) {
+    addMarker(mapLocation);
+  });
+
+
+  $(contactsPlaces).on('click', '[data-place-location]', function(event) {
+    event.preventDefault();
+    $(locationPlaces).removeClass('contacts-place-map--active')
+    $(this).addClass('contacts-place-map--active')
+    map.panTo( getLocationCenter(this) );
+  });
+
+  function getLocationCenter(element) {
+    return JSON.parse(element.dataset.placeLocation);
+  }
+
+
+  function createProp(defaultLocation) {
+    return {
+      center: defaultLocation,
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false,
+      disableDefaultUI: true,
+      zoomControl: true,
+    };
+  }
+
+  function addMarker(markerOption) {
+    var svgIcon = {
+      url: ICONPATH,
+    };
+
+    var marker = new google.maps.Marker({
+      position: markerOption.position,
+      map: map,
+      title: markerOption.title,
+      icon: svgIcon
+    });
+  }
+}
+
+

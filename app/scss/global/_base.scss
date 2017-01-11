@@ -1,3 +1,8 @@
+html,
+body {
+  // overflow-x: hidden;
+}
+
 html {
   font-size: $base-font-size;
 
@@ -36,6 +41,7 @@ body {
 
 .main-wrapper {
   flex: 1 0 auto;
+  overflow-x: hidden;
 }
 
 .main {
@@ -51,12 +57,22 @@ body {
   box-sizing: border-box;
   border-bottom: 1px solid #d8d8d8;
 
+  .homepage & {
+    margin-bottom: 50px;
+  }
+
+
   @media (min-width: $media-laptop-up) {
     flex: 0 0 260px;
     padding-right: 10px;
-    margin-right: 55px;
+    margin-right: $offset-layout;
     border-bottom: none;
     border-right: 1px solid #d8d8d8;
+
+    .homepage & {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
 }
 

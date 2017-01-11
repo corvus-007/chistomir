@@ -1,0 +1,46 @@
+.preview-events {
+}
+
+.preview-events__list {
+  display: flex;
+}
+
+.preview-event {
+  display: flex;
+}
+
+.preview-event__link {
+  padding: 1rem;
+  flex-grow: 1;
+  display: block;
+  color: currentColor;
+}
+
+.preview-event--primary {
+  .preview-event__link {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+.preview-event--secondary {
+  
+  .preview-event__link {
+    background-color: #ccedfc;
+  }
+}
+
+.preview-event--third {
+
+  .preview-event__link {
+    background-color: #e1f4fc;
+  }
+}
+
+@media (min-width: $media-tablet-up) {
+  .preview-event--primary {
+    .preview-event__link {
+      padding-left: $offset-layout;
+    }
+  }
+}

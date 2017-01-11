@@ -1,0 +1,73 @@
+.contacts-places-map {
+  @include clear-list();
+  margin-bottom: 1rem;
+}
+
+.contacts-place-map {
+  margin-bottom: 1em;
+  padding: 10px;
+  border: 1px solid;
+  font-size: rem(15);
+  box-sizing: border-box;
+  cursor: pointer;
+  color: $primary-color;
+  transition: 0.25s;
+
+  &:hover {
+    
+  }
+
+  &--active {
+    color: $base-color;
+    border-color: transparent;
+    background-color: $light-color;
+    cursor: default;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-place-map__caption {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: rem(18);
+  font-weight: 600;
+  transition: inherit;
+}
+
+.contacts-place-map:hover .contacts-place-map__caption {
+  color: $base-color;
+}
+
+@media (min-width: $media-mobile-up) {
+  .contacts-places-map {
+    display: flex;
+  }
+
+  .contacts-place-map {
+    margin-right: 25px;
+    margin-bottom: 0;
+    padding: 10px 25px;
+    flex-basis: 245px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $media-laptop-l-up) {
+  .contacts-place-map {
+    max-width: 260px;
+  }
+}
+
+@media (min-width: $media-laptop-xl-up) {
+  .contacts-place-map {
+    max-width: 350px;
+  }
+}

@@ -7,7 +7,7 @@
   <title>Главная – Чистомир</title>
   <link rel="stylesheet" href="style-min.css">
 </head>
-<body>
+<body class="homepage">
   <div class="main-wrapper">
     @@include('blocks/main-header.html')
     <main class="main">
@@ -26,7 +26,58 @@
         </section>
       </aside>
       <div class="main-content">
-        <h1>Далеко-далеко.</h1>
+        <section class="index-intro">
+          <div class="index-intro__headline">
+            <h2 class="index-intro__title">
+              Профессиональный клининг
+              <span>за разумные деньги</span>
+            </h2>
+          </div>
+          <ul class="index-intro__list custom-ul">
+            <li>Предпродажная уборка квартир</li>
+            <li>Уборка квартир, домов, офисов, торговых помещений</li>
+            <li>Генеральная уборка квартир</li>
+            <li>Ежедневная комплексная уборка</li>
+            <li>Выезд домработницы</li>
+          </ul>
+          <a class="index-intro__button button" href="">Узнать подробнее</a>
+        </section>
+
+        <section class="index-deals">
+          <div class="index-deals__headline">
+            <h2 class="index-deals__title">Спецпредложения</h2>
+            <a class="index-deals__more-link" href="">Смотреть все</a>
+          </div>
+        </section>
+
+        <section class="preview-events">
+          <h2 class="visuallyhidden">Новости</h2>
+          <div class="preview-events__list">
+            <article class="preview-event preview-event--primary">
+              <a class="preview-event__link" href="">
+                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                <h3 class="preview-event__title">Бесплатная чистка ковра!</h3>
+                <p class="preview-event__excerpt">Ультравыгодное предложение от группы клининговых компаний «Чистомир» …</p>
+              </a>
+            </article>
+            <article class="preview-event preview-event--secondary">
+              <a class="preview-event__link" href="">
+                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                <h3 class="preview-event__title">Дозаторы SEKO ставим даром</h3>
+                <p class="preview-event__excerpt">С сентября 2015 г. постоянным клиентам при покупке моющих средств PRAMOL …</p>
+              </a>
+            </article>
+            <article class="preview-event preview-event--third">
+              <a class="preview-event__link" href="">
+                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                <h3 class="preview-event__title">Купи SEBO и получи подарок</h3>
+                <p class="preview-event__excerpt">При покупке пылесоса фирмы SEBO — чистящий порошок для ковров и ковровых …</p>
+              </a>
+            </article>
+          </div>
+        </section>
+
+
       </div>
     </main>
   </div>

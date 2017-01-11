@@ -43,12 +43,6 @@
 .main-nav__link {
   padding-left: 25px;
   padding-right: 25px;
-
-  // <<< Удалить
-  &[href=""] {
-    background-color: #BDBDBD;
-  }
-  // Удалить >>>
 }
 
 @media (max-width: $media-laptop-down) {

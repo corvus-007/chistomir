@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог продукции – Чистомир</title>
+  <link rel="stylesheet" href="style-min.css">
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAVpE3x_K0Dz64WXpb1TcbmqbhiEEVkqgw"></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    @@include('blocks/main-header.html')
+    <main class="main">
+      <aside class="main-sidebar">
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Каталог тваров</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-catalog-nav.html')
+          </div>
+        </section>
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Бренды</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-brands.html')
+          </div>
+        </section>
+      </aside>
+      <article class="main-content">
+        <h1>Каталог продукции</h1>
+
+      </article>
+    </main>
+  </div>
+  @@include('blocks/main-footer.html')
+</body>
+</html>

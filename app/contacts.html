@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Контактная информация – Чистомир</title>
   <link rel="stylesheet" href="style-min.css">
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAVpE3x_K0Dz64WXpb1TcbmqbhiEEVkqgw"></script>
 </head>
 <body>
   <div class="main-wrapper">
@@ -28,8 +29,31 @@
       <article class="main-content">
         <h1>Контактная информация</h1>
 
-        <div class="main-content-incut">
-          
+        <div class="contacts-info">
+          <b class="contacts-info__title">График работы:</b>
+          <p>
+            ежедневно 10.00 - 19.00,<br>
+            выходной - воскресенье
+          </p>
+        </div>
+        <div class="contacts-info">
+          <b class="contacts-info__title">Позвоните нам:</b>
+          <p>
+            <a href="tel:+7 (4832) 33-22-06">+7&nbsp;(4832)&nbsp;33-22-06</a> / <a href="tel:+7 (4832) 59-50-05">+7&nbsp;(4832)&nbsp;59-50-05</a> (факс)
+          </p>
+        </div>
+        <div class="contacts-info">
+          <ul class="contacts-places-map">
+            <li class="contacts-place-map" data-place-location='{"lat": 53.249174, "lng": 34.336109}'>
+              <b class="contacts-place-map__caption">Магазин “Всё для уборки”</b>
+              <p>241050, г.&nbsp;Брянск, Советский&nbsp;р-н, проспект Станке&nbsp;Димитрова, д.&nbsp;20</p>
+            </li>
+            <li class="contacts-place-map" data-place-location='{"lat": 53.220458, "lng": 34.380990}'>
+              <b class="contacts-place-map__caption">Отдел магазина в ТЦ “Линия”</b>
+              <p>241050, г.&nbsp;Брянск, Фокинский&nbsp;р-н, проспект Московский, д.&nbsp;4</p>
+            </li>
+          </ul>
+          <div class="contacts-map" id="contacts-map" style="height: 400px;"></div>
         </div>
       </article>
     </main>

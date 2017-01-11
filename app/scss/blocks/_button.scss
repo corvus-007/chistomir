@@ -33,6 +33,7 @@
   box-sizing: border-box;
   transition: background-color 0.2s, color 0.2s;
   cursor: pointer;
+  letter-spacing: 0.04em;
 
   &--small {
     font-size: rem(13);
