@@ -11,73 +11,135 @@
   <div class="main-wrapper">
     @@include('blocks/main-header.html')
     <main class="main">
-      <aside class="main-sidebar">
-        <section class="main-sidebar-module">
-          <h2 class="main-sidebar-module__title">Каталог тваров</h2>
-          <div class="main-sidebar-module__body">
-            @@include('blocks/sidebar-catalog-nav.html')
+      <div class="main-index-section">
+        
+        <aside class="main-sidebar">
+          <section class="main-sidebar-module">
+            <h2 class="main-sidebar-module__title">Каталог тваров</h2>
+            <div class="main-sidebar-module__body">
+              @@include('blocks/sidebar-catalog-nav.html')
+            </div>
+          </section>
+          <section class="main-sidebar-module">
+            <h2 class="main-sidebar-module__title">Бренды</h2>
+            <div class="main-sidebar-module__body">
+              @@include('blocks/sidebar-brands.html')
+            </div>
+          </section>
+        </aside>
+        <div class="main-content">
+          <section class="index-intro">
+            <div class="index-intro__headline">
+              <h2 class="index-intro__title">
+                Профессиональный клининг
+                <span>за разумные деньги</span>
+              </h2>
+            </div>
+            <ul class="index-intro__list custom-ul">
+              <li>Предпродажная уборка квартир</li>
+              <li>Уборка квартир, домов, офисов, торговых помещений</li>
+              <li>Генеральная уборка квартир</li>
+              <li>Ежедневная комплексная уборка</li>
+              <li>Выезд домработницы</li>
+            </ul>
+            <a class="index-intro__button button" href="#">Узнать подробнее</a>
+          </section>
+
+          <section class="index-deals">
+            <div class="index-deals__headline">
+              <h2 class="index-deals__title">Спецпредложения</h2>
+              <a class="index-deals__more-link" href="#">Смотреть все</a>
+            </div>
+          </section>
+
+          <section class="preview-events">
+            <h2 class="visuallyhidden">Новости</h2>
+            <div class="preview-events__list">
+              <article class="preview-event preview-event--primary">
+                <a class="preview-event__link preview-event__link--primary" href="#">
+                  <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                  <h3 class="preview-event__title">
+                    <span>Бесплатная чистка ковра!</span>
+                  </h3>
+                  <p class="preview-event__excerpt">Ультравыгодное предложение от группы клининговых компаний «Чистомир»&nbsp; …</p>
+                </a>
+              </article>
+              <article class="preview-event">
+                <a class="preview-event__link preview-event__link--secondary" href="#">
+                  <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                  <h3 class="preview-event__title">
+                    <span>Дозаторы SEKO ставим даром</span>
+                  </h3>
+                  <p class="preview-event__excerpt">С сентября 2015 г. постоянным клиентам при покупке моющих средств PRAMOL&nbsp; …</p>
+                </a>
+              </article>
+              <article class="preview-event">
+                <a class="preview-event__link preview-event__link--third" href="#">
+                  <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
+                  <h3 class="preview-event__title">
+                    <span>Купи SEBO и получи подарок</span>
+                  </h3>
+                  <p class="preview-event__excerpt">При покупке пылесоса фирмы SEBO — чистящий порошок для ковров и ковровых&nbsp; …</p>
+                </a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="main-index-section">
+        <div class="index-about">
+          <div class="index-about__image-area">
+            <div class="index-about__image-holder">
+              <img src="images/director.jpg" srcset="images/director@2x.jpg 2x" alt="Николай Перистый">
+            </div>
+            <div class="index-about__image-caption">
+              <b>Николай Перистый</b>
+              <span>директор компании «Чистомир»</span>
+            </div>
           </div>
-        </section>
-        <section class="main-sidebar-module">
-          <h2 class="main-sidebar-module__title">Бренды</h2>
-          <div class="main-sidebar-module__body">
-            @@include('blocks/sidebar-brands.html')
+          <div class="index-about__text-area">
+            <h2>О компании</h2>
+            <p>Группа Клининговых Компаний «Чистомир» является самой крупной и профессиональной компанией в г. Брянске и Брянской области осуществляющей свою деятельность в области клининговых услуг, продаже оборудования, моющих средств и инвентаря для уборки.</p>
+            <p>Наша работа основана на профессиональном подходе к оказываемым услугам. Мы можем дать четкие и правильные рекомендации нашим клиентам по использованию оборудования, инвентаря и моющих средств. Мы решаем даже сложные задачи в уборке.</p>
           </div>
-        </section>
-      </aside>
-      <div class="main-content">
-        <section class="index-intro">
-          <div class="index-intro__headline">
-            <h2 class="index-intro__title">
-              Профессиональный клининг
-              <span>за разумные деньги</span>
-            </h2>
-          </div>
-          <ul class="index-intro__list custom-ul">
-            <li>Предпродажная уборка квартир</li>
-            <li>Уборка квартир, домов, офисов, торговых помещений</li>
-            <li>Генеральная уборка квартир</li>
-            <li>Ежедневная комплексная уборка</li>
-            <li>Выезд домработницы</li>
+        </div>
+      </div>
+      <div class="main-index-section">
+        <h2 class="visuallyhidden">Бренды</h2>
+        <div class="index-brands">
+          <ul class="index-brands__list grid">
+            <li class="index-brand">
+              <img src="images/brands/cleanfix.png" srcset="cleanfix@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/vikan.png" srcset="vikan@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/vdm.png" srcset="vdm@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/vileda.png" srcset="vileda@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/ettore.png" srcset="ettore@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/sebo.png" srcset="sebo@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/rosmop.png" srcset="rosmop@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/sikmo.png" srcset="sikmo@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/pramol.png" srcset="pramol@2x.png 2x" alt="">
+            </li>
+            <li class="index-brand">
+              <img src="images/brands/pro-brite.png" srcset="pro-brite@2x.png 2x" alt="">
+            </li>
           </ul>
-          <a class="index-intro__button button" href="">Узнать подробнее</a>
-        </section>
-
-        <section class="index-deals">
-          <div class="index-deals__headline">
-            <h2 class="index-deals__title">Спецпредложения</h2>
-            <a class="index-deals__more-link" href="">Смотреть все</a>
-          </div>
-        </section>
-
-        <section class="preview-events">
-          <h2 class="visuallyhidden">Новости</h2>
-          <div class="preview-events__list">
-            <article class="preview-event preview-event--primary">
-              <a class="preview-event__link" href="">
-                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
-                <h3 class="preview-event__title">Бесплатная чистка ковра!</h3>
-                <p class="preview-event__excerpt">Ультравыгодное предложение от группы клининговых компаний «Чистомир» …</p>
-              </a>
-            </article>
-            <article class="preview-event preview-event--secondary">
-              <a class="preview-event__link" href="">
-                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
-                <h3 class="preview-event__title">Дозаторы SEKO ставим даром</h3>
-                <p class="preview-event__excerpt">С сентября 2015 г. постоянным клиентам при покупке моющих средств PRAMOL …</p>
-              </a>
-            </article>
-            <article class="preview-event preview-event--third">
-              <a class="preview-event__link" href="">
-                <time class="preview-event__date" datetime="2016-12-24">24/12/2016</time>
-                <h3 class="preview-event__title">Купи SEBO и получи подарок</h3>
-                <p class="preview-event__excerpt">При покупке пылесоса фирмы SEBO — чистящий порошок для ковров и ковровых …</p>
-              </a>
-            </article>
-          </div>
-        </section>
-
-
+        </div>
       </div>
     </main>
   </div>

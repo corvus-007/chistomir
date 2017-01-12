@@ -16,6 +16,7 @@ $link-color: $primary-color;
 
 
 // Sizes
+$sidebar-width: 260px;
 $offset-layout: 55px;
 
 // Fonts
@@ -24,7 +25,7 @@ $primary-font: "Akrobat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 
 // Media querys
-$media-mobile-up: 480px;
+$media-mobile-up: 520px;
 $media-mobile-down: $media-mobile-up - 1;
 
 $media-tablet-up: 768px;

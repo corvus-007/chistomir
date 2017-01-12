@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
   /*=====  End of About slider  ======*/
 
 
-
   /*==================================
   =            Input mask            =
   ==================================*/
@@ -50,6 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   /*=====  End of Input mask  ======*/
+
+  $('.js-trigger-inline-popup').magnificPopup({
+    mainClass: 'popup-fade',
+    removalDelay: 300
+  });
+
+  /*====================================
+  =            Contacts map            =
+  ====================================*/
+  
+  
+  
+  /*=====  End of Contacts map  ======*/
+  
 
   var contactsMap = document.querySelector('#contacts-map');
 
