@@ -134,7 +134,8 @@ a {
     border-bottom: 1px solid;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: mix(#000, $link-color, 10%);
   }
 }

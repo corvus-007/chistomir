@@ -1,6 +1,7 @@
 .custom-ul {
-  @include clear-list();
   $dimensions-marker: 10;
+
+  @include clear-list();
 
   margin: 0;
   padding: 0;
@@ -10,17 +11,17 @@
     margin-bottom: 0.7em;
     position: relative;
     padding-left: $dimensions-marker * 1px + 15px;
-  }
 
-  li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.4em;
-    width: rem($dimensions-marker);
-    height: rem($dimensions-marker);
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 3px solid $accent-color;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      width: rem($dimensions-marker);
+      height: rem($dimensions-marker);
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 2px solid $accent-color;
+    }
   }
 }

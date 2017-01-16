@@ -35,12 +35,22 @@
   cursor: pointer;
   letter-spacing: 0.04em;
 
+  // Small
   &--small {
     font-size: rem(13);
     padding: em(14, 13) em(25, 13);
   }
+
+  // Has icon
+  &--has-icon {
+    display: inline-flex;
+    align-items: center;
+    .svg-icon {
+      margin-right: 0.5em;
+    }
+  }
 }
 
 .button--dark {
-  @include buttonColor(#2c2929);
+  // @include buttonColor(#2c2929);
 }
