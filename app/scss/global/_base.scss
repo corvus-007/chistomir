@@ -56,7 +56,7 @@ body {
   }
 }
 
-.main-index-section {
+.main-index-strip {
 
   @media (min-width: $media-laptop-up) {
     display: flex;
@@ -103,12 +103,14 @@ body {
 
 .main-content {
   padding-bottom: rem(40);
-  min-width: 0;
+  // min-width: 0;
 
   @media (min-width: $media-laptop-up) {
-    flex-grow: 1;
+    width: calc(100% - #{$sidebar-width} - #{$offset-layout});
+    box-sizing: border-box;
 
     .homepage & {
+      width: calc(100% - #{$sidebar-width});
       padding-bottom: 0;
     }
   }

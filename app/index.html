@@ -11,7 +11,7 @@
   <div class="main-wrapper">
     @@include('blocks/main-header.html')
     <main class="main">
-      <div class="main-index-section">
+      <div class="main-index-strip">
         
         <aside class="main-sidebar">
           <section class="main-sidebar-module">
@@ -50,6 +50,22 @@
               <h2 class="index-deals__title">Спецпредложения</h2>
               <a class="index-deals__more-link" href="#">Смотреть все</a>
             </div>
+            <div class="products-grid">
+              <div class="product-card">
+                <div class="product-card__image-holder">
+                  <img src="//placehold.it/125x125" alt="" />
+                </div>
+                <div class="product-card__price">
+                  <div class="product-price">36.600 ₽</div>
+                </div>
+                <h3 class="product-card__name">
+                  <span>Грязеводосос Cleanfix SW 21 Combi</span>
+                </h3>
+              </div>
+              <div class="product-card">5</div>
+              <div class="product-card">5</div>
+              <div class="product-card">5</div>
+            </div>
           </section>
 
           <section class="preview-events">
@@ -61,7 +77,7 @@
                   <h3 class="preview-event__title">
                     <span>Бесплатная чистка ковра!</span>
                   </h3>
-                  <p class="preview-event__excerpt">Ультравыгодное предложение от группы клининговых компаний «Чистомир»&nbsp; …</p>
+                  <p class="preview-event__excerpt">Ультравыгодное предложение от группы клининговых компаний «Чистомир»&nbsp;…</p>
                 </a>
               </article>
               <article class="preview-event">
@@ -70,7 +86,7 @@
                   <h3 class="preview-event__title">
                     <span>Дозаторы SEKO ставим даром</span>
                   </h3>
-                  <p class="preview-event__excerpt">С сентября 2015 г. постоянным клиентам при покупке моющих средств PRAMOL&nbsp; …</p>
+                  <p class="preview-event__excerpt">С сентября 2015 г. постоянным клиентам при покупке моющих средств PRAMOL&nbsp;…</p>
                 </a>
               </article>
               <article class="preview-event">
@@ -79,15 +95,15 @@
                   <h3 class="preview-event__title">
                     <span>Купи SEBO и получи подарок</span>
                   </h3>
-                  <p class="preview-event__excerpt">При покупке пылесоса фирмы SEBO — чистящий порошок для ковров и ковровых&nbsp; …</p>
+                  <p class="preview-event__excerpt">При покупке пылесоса фирмы SEBO — чистящий порошок для ковров и ковровых&nbsp;…</p>
                 </a>
               </article>
             </div>
           </section>
         </div>
       </div>
-      <div class="main-index-section">
-        <div class="index-about">
+      <div class="main-index-strip">
+        <section class="index-about">
           <div class="index-about__image-area">
             <div class="index-about__image-holder">
               <img src="images/director.jpg" srcset="images/director@2x.jpg 2x" alt="Николай Перистый">
@@ -98,15 +114,15 @@
             </div>
           </div>
           <div class="index-about__text-area">
-            <h2>О компании</h2>
+            <h2 class="h1">О компании</h2>
             <p>Группа Клининговых Компаний «Чистомир» является самой крупной и профессиональной компанией в г. Брянске и Брянской области осуществляющей свою деятельность в области клининговых услуг, продаже оборудования, моющих средств и инвентаря для уборки.</p>
             <p>Наша работа основана на профессиональном подходе к оказываемым услугам. Мы можем дать четкие и правильные рекомендации нашим клиентам по использованию оборудования, инвентаря и моющих средств. Мы решаем даже сложные задачи в уборке.</p>
           </div>
-        </div>
+        </section>
       </div>
-      <div class="main-index-section">
-        <h2 class="visuallyhidden">Бренды</h2>
-        <div class="index-brands">
+      <div class="main-index-strip">
+        <section class="index-brands">
+          <h2 class="visuallyhidden">Бренды</h2>
           <ul class="index-brands__list grid">
             <li class="index-brand">
               <img src="images/brands/cleanfix.png" srcset="cleanfix@2x.png 2x" alt="">
@@ -139,7 +155,7 @@
               <img src="images/brands/pro-brite.png" srcset="pro-brite@2x.png 2x" alt="">
             </li>
           </ul>
-        </div>
+        </section>
       </div>
     </main>
   </div>

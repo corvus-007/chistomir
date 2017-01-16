@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (aboutSlider) {
     $(aboutSlider).slick({
       accessibility: false,
-      infinite: false,
-      respondTo: 'min'
+      infinite: false
     });
   }
   
