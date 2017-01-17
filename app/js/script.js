@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /*====================================
   =            About slider            =
   ====================================*/
-  
+
   var aboutSlider = document.querySelector('.about-slider');
   if (aboutSlider) {
     $(aboutSlider).slick({
@@ -33,8 +33,70 @@ document.addEventListener('DOMContentLoaded', function() {
       infinite: false
     });
   }
-  
+
   /*=====  End of About slider  ======*/
+
+
+  /*=========================================
+  =            Accordion catalog            =
+  =========================================*/
+
+  var $catalogSection = $('.catalog-category');
+
+  if ($catalogSection.length) {
+    $catalogSection.each(function (index, el) {
+      $(this).find('.catalog-subsection').hide();
+      $(this).find('.catalog-category__toggle').show().addClass('catalog-category__toggle--closed');
+
+    });
+
+    var toggleBaseText = $(this).find('.catalog-category__toggle:first').text();
+    $catalogSection.on('click', '.catalog-category__toggle', function (event) {
+      event.preventDefault();
+
+      $(this).toggleClass('catalog-category__toggle--closed catalog-category__toggle--opened');
+      $(this).addClass('catalog-category__toggle--opened');
+      $(this).closest('.catalog-category').find('.catalog-subsection').slideToggle();
+
+      if ($(this).hasClass('catalog-category__toggle--closed')) {
+        this.textContent = toggleBaseText;
+      } else {
+        this.textContent = 'Скрыть подкатегории';
+      }
+    });
+  }
+
+  /*=====  End of Accordion catalog  ======*/
+
+
+  /*=================================
+  =            Accordion            =
+  =================================*/
+
+  var $accordion = $('.js-accordion');
+
+  if ($accordion.length) {
+    $accordion.each(function (index, el) {
+      $(this).find('.accordion__content').hide();
+      $(this).on('click', '.accordion__label', function (event) {
+        event.preventDefault();
+
+        if ($(this).hasClass('is-opened')) {
+          $accordion.find('.accordion__label').removeClass('is-opened');
+          $accordion.find('.accordion__content').slideUp();
+          $(this).removeClass('is-opened');
+          $(this).next('.accordion__content').slideUp();
+        } else {
+          $accordion.find('.accordion__label').removeClass('is-opened');
+          $accordion.find('.accordion__content').slideUp();
+          $(this).addClass('is-opened');
+          $(this).next('.accordion__content').slideDown();
+        }
+      });
+    });
+  }
+
+  /*=====  End of Accordion  ======*/
 
 
   /*==================================
@@ -57,11 +119,11 @@ document.addEventListener('DOMContentLoaded', function() {
   /*====================================
   =            Contacts map            =
   ====================================*/
-  
-  
-  
+
+
+
   /*=====  End of Contacts map  ======*/
-  
+
 
   var contactsMap = document.querySelector('#contacts-map');
 

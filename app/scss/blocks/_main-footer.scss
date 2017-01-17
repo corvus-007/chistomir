@@ -1,4 +1,5 @@
 .main-footer {
+  font-size: rem(15);
   color: #979797;
   background-color: $light-color;
 }
@@ -38,6 +39,10 @@
   }
 }
 
+.main-footer__copy {
+  margin-bottom: 0;
+}
+
 .main-footer__phones {
   p {
     margin-bottom: 0;
@@ -51,8 +56,6 @@
     color: currentColor;
   }
 }
-
-
 
 .main-footer__developer {
   margin-bottom: 0;

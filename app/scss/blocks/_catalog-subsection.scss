@@ -1,0 +1,40 @@
+.catalog-subsection {
+  padding: rem(30);
+  border-top: 1px solid $light-color-secondary;
+}
+
+.catalog-subsection__items {
+  @include clear-list();
+  margin-bottom: -0.7rem;
+}
+
+.catalog-subsection__item {
+  font-size: rem(15);
+  margin-bottom: 0.7rem;
+}
+
+
+@media (min-width: 568px) {
+  .catalog-subsection__items {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  .catalog-subsection__item {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .catalog-subsection__items {
+    column-count: 3;
+    column-gap: 2.3rem;
+  }
+}
+
+@media (min-width: $media-laptop-l-up) {
+  .catalog-subsection__items {
+    column-gap: 2.5rem;
+  }
+}

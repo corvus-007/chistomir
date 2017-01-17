@@ -1,6 +1,7 @@
 .contacts-places-map {
   @include clear-list();
-  margin-bottom: 1rem;
+  margin-top: rem(30);
+  margin-bottom: rem(25);
 }
 
 .contacts-place-map {

@@ -15,7 +15,7 @@ $grid-gutter: 10;
 }
 
 [class*="col-"] {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
   padding-left: $grid-gutter * 1px;
   padding-right: $grid-gutter * 1px;
   box-sizing: border-box;

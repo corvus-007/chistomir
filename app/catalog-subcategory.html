@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог/Уборочная техника – Чистомир</title>
+  <link rel="stylesheet" href="style-min.css">
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAVpE3x_K0Dz64WXpb1TcbmqbhiEEVkqgw"></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    @@include('blocks/main-header.html')
+    <main class="main">
+      <aside class="main-sidebar">
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Каталог тваров</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-catalog-nav.html')
+          </div>
+        </section>
+        <section class="main-sidebar-module">
+          <h2 class="main-sidebar-module__title">Бренды</h2>
+          <div class="main-sidebar-module__body">
+            @@include('blocks/sidebar-brands.html')
+          </div>
+        </section>
+      </aside>
+      <article class="main-content">
+        <h1>Уборочная техника</h1>
+        <p>Пылесосы, грязеводососы, поломоечные и экстракторные машины, роторы и многое другое. Только качественная продукция зарубежных брендов!</p>
+
+        <div class="main-content-incut">
+          <ul class="subcategory-nav grid">
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/01.jpg" srcset="images/subcategory-nav/01@2x.jpg 2x" alt="Пылесосы">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Пылесосы</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/02.jpg" srcset="images/subcategory-nav/02@2x.jpg 2x" alt="Грязеводососы">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Грязеводососы</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/03.jpg" srcset="images/subcategory-nav/03@2x.jpg 2x" alt="Поломоечные машины">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Поломоечные<br> машины</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/04.jpg" srcset="images/subcategory-nav/04@2x.jpg 2x" alt="Экстракторные машины">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Экстракторные<br> машины</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/05.jpg" srcset="images/subcategory-nav/05@2x.jpg 2x" alt="Щеточные пылесосы">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Щеточные пылесосы</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/06.jpg" srcset="images/subcategory-nav/06@2x.jpg 2x" alt="Подметальные машины">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Подметальные<br> машины</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/07.jpg" srcset="images/subcategory-nav/07@2x.jpg 2x" alt="Парогенераторы">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Парогенераторы</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/08.jpg" srcset="images/subcategory-nav/08@2x.jpg 2x" alt="Электровеники">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Электровеники</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/09.jpg" srcset="images/subcategory-nav/09@2x.jpg 2x" alt="Сушилки для пола">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Сушилки для пола</span>
+                </h2>
+              </a>
+            </li>
+            <li class="subcategory-nav__item col-6 col-mobile-up-4 col-tablet-up-3">
+              <a class="subcategory-nav__wraplink" href="#">
+                <div class="subcategory-nav__image-holder">
+                  <img src="images/subcategory-nav/10.jpg" srcset="images/subcategory-nav/10@2x.jpg 2x" alt="Роторные устройства">
+                </div>
+                <h2 class="subcategory-nav__title">
+                  <span>Роторные устройства</span>
+                </h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </div>
+  @@include('blocks/main-footer.html')
+</body>
+</html>

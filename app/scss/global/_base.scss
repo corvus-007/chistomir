@@ -1,6 +1,6 @@
 html,
 body {
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -103,7 +103,7 @@ body {
 
 .main-content {
   padding-bottom: rem(40);
-  // min-width: 0;
+  min-width: 0;
 
   @media (min-width: $media-laptop-up) {
     width: calc(100% - #{$sidebar-width} - #{$offset-layout});
@@ -136,7 +136,7 @@ a {
 
   &:hover,
   &:focus {
-    color: mix(#000, $link-color, 10%);
+    color: mix(#000, $link-color, 15%);
   }
 }
 
