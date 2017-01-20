@@ -116,6 +116,19 @@ document.addEventListener('DOMContentLoaded', function() {
     removalDelay: 300
   });
 
+  $('.product-main-photo').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    mainClass: 'popup-fade',
+    removalDelay: 300,
+    gallery: {
+      enabled: true
+    },
+    retina: {
+      ratio: 2
+    }
+  });
+
   /*====================================
   =            Contacts map            =
   ====================================*/

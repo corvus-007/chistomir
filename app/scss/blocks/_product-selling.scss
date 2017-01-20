@@ -1,0 +1,17 @@
+.product-selling {
+  padding: rem(30) 18%;
+  text-align: center;
+  background-color: $light-color;
+}
+
+.product-selling__price {
+  margin-bottom: rem(5);
+  font-size: rem(36);
+  line-height: 1;
+}
+
+.product-selling__button {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+}

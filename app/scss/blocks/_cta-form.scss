@@ -1,11 +1,23 @@
 .cta-form {
-  padding: 50px;
+  padding: 45px 11.5% 30px;
   background-color: $light-color;
 
   .form-item {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.cta-form__note {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  font-size: rem(12);
+  text-align: center;
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 

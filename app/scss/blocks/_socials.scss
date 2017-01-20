@@ -5,11 +5,17 @@
 }
 
 .socials__item {
+  opacity: 0.75;
   vertical-align: middle;
   width: rem(33);
   height: rem(33);
   text-decoration: none;
   margin-right: 1em;
+  transition: opacity 0.22s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   &:last-child {
     margin-right: 0;

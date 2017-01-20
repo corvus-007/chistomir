@@ -17,6 +17,7 @@
   color: #ffffff;
   background-color: $primary-color;
   transition: background-color 0.2s;
+  user-select: none;
 
   &:hover,
   &:focus {

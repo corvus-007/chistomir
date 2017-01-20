@@ -125,13 +125,14 @@ a {
   text-decoration: none;
   outline: none;
 
+  &:not([class]) {
+    border-bottom: 1px solid;
+  }
+
   &[href^="tel:"] {
     color: currentColor;
     text-decoration: none;
-  }
-
-  &:not([class]):not([href^="tel:"]) {
-    border-bottom: 1px solid;
+    border-bottom: none;
   }
 
   &:hover,

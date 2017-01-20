@@ -12,6 +12,7 @@ $grid-gutter: 10;
 
 @mixin createFlexColumn($column: 12) {
   flex-basis: percentage($column / $grid-count);
+  max-width: percentage($column / $grid-count);
 }
 
 [class*="col-"] {

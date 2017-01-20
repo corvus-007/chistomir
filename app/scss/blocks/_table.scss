@@ -1,3 +1,58 @@
-.table {
-  
+.response-table {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+
+  table {
+    margin-bottom: 0;
+  }
+
 }
+
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  cursor: default;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+caption {
+}
+
+th,
+td {
+  border: 1px solid $accent-color;
+  padding: 5px;
+}
+
+tbody {
+  tr {
+    &:hover {
+      td {
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}
+
+
+// $mapAlign: (left, center, right);
+// $countCells: 5;
+
+// .table {
+//   @each $align in $mapAlign {
+
+//     @for $i from 1 through $countCells {
+
+//       &-#{$align}-colgroup-#{$i} {
+//         th:nth-child(#{$i}),
+//         td:nth-child(#{$i}) {
+//           text-align: $align;
+//         }
+//       }
+      
+//     }
+
+//   }
+// }

@@ -18,7 +18,6 @@
 
 .main-nav__items {
   margin-right: 30px;
-  // margin-left: -25px;
 }
 
 .main-nav__item,
@@ -37,6 +36,7 @@
   border: none;
   background-color: transparent;
   transition: 0.2s;
+  user-select: none;
 
   &:hover,
   &:focus {

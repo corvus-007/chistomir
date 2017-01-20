@@ -1,0 +1,11 @@
+.product-summary {
+
+}
+
+.product-summary__unit {
+  margin-bottom: rem(30);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

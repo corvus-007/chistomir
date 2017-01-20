@@ -26,8 +26,6 @@
     border: 2px solid transparent;
     z-index: -1;
     transition: 0.1s linear;
-    backface-visibility: hidden;
-    // background-color: #fff;
   }
 
   &:hover,
@@ -52,9 +50,7 @@
 
 .product-card__price {
   margin-bottom: 0.1em;
-  font-weight: 600;
   font-size: rem(20);
-  color: $base-color;
 }
 
 .product-card__name {
@@ -67,12 +63,13 @@
   }
 }
 
-@media (min-width: $media-mobile-up) {
-  .products-grid {
-    // display: flex;
-    // flex-wrap: wrap;
+@media (min-width: 400px) {
+  .product-card {
+    @include createFlexColumn(4);
   }
+}
 
+@media (min-width: $media-mobile-up) {
   .product-card {
     @include createFlexColumn(3);
   }

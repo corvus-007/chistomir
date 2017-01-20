@@ -1,4 +1,5 @@
-.custom-ul {
+.custom-ul,
+ul:not([class]) {
   $dimensions-marker: 10;
 
   @include clear-list();
