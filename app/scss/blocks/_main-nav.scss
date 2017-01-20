@@ -20,12 +20,12 @@
   margin-right: 30px;
 }
 
-.main-nav__item,
+.main-nav__items li,
 .main-nav__user-item {
   color: #fff;
 }
 
-.main-nav__link,
+.main-nav__items a,
 .main-nav__user-link {
   display: block;
   padding-top: rem(16);
@@ -45,7 +45,14 @@
   }
 }
 
-.main-nav__link {
+.current-menu-item a,
+.current-menu-item a:hover,
+.current-menu-item a:focus {
+  cursor: default;
+  background-color: darken($primary-color, 5%);
+}
+
+.main-nav__items a {
   padding-left: 20px;
   padding-right: 20px;
 }

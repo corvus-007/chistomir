@@ -3,7 +3,7 @@
   font-size: rem(15);
 }
 
-.sidebar-catalog-nav__item {
+.sidebar-catalog-nav li {
   border-bottom: 1px solid #d8d8d8;
 
   &:last-child {
@@ -11,7 +11,7 @@
   }
 }
 
-.sidebar-catalog-nav__link {
+.sidebar-catalog-nav a {
   position: relative;
   display: block;
   padding-top: 10px;
@@ -19,6 +19,12 @@
   padding-right: 60px;
   color: currentColor;
   user-select: none;
+  border-bottom: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary-color;
+  }
 
   &::before,
   &::after {

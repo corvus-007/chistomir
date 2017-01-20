@@ -16,36 +16,13 @@
 
 .index-about__image-area {
   margin-top: 2rem;
+  min-width: 200px;
+  width: 200px;
 }
 
 .index-about__image-holder {
-  min-width: 200px;
-  width: 200px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  @include responsiveObject();
   border-radius: 50%;
-  position: relative;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    .no-objectfit & {
-      height: auto;
-    }
-    
-    .no-objectfit.csstransforms & {
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  }
 }
 
 .index-about__image-caption {
@@ -88,6 +65,7 @@
   .index-about__image-holder {
     width: auto;
     height: 100%;
+    padding-top: 0;
     border-radius: 0;
   }
 
