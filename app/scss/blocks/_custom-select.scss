@@ -3,7 +3,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  color: #d8d8d8;
+  color: $muted-color;
 
   &::after {
     content: "";
@@ -30,7 +30,7 @@
   option {
     color: $base-color;
     &:disabled {
-      color: #d8d8d8;
+      color: $light-color-secondary;
     }
   }
 }
