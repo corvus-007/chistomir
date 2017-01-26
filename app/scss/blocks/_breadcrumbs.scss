@@ -15,19 +15,40 @@
       margin-left: 13px;
       transform: translateX(-50%);
     }
-  }
 
-  li.current {
-    margin-right: 0;
-
-    &::after {
-      content: none;
+    &:first-child {
+      a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        text-indent: -1000px;
+        border-bottom: none;
+        background-image: url("http://chistomir.01it.ru/wp-content/themes/chistomir/images/site-logo-breadcrumbs-index.png");
+        background-image: image-set(
+          url("http://chistomir.01it.ru/wp-content/themes/chistomir/images/site-logo-breadcrumbs-index.png") 1x,
+          url("http://chistomir.01it.ru/wp-content/themes/chistomir/images/site-logo-breadcrumbs-index@2x.png") 2x
+        );
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
 
-    a {
-      cursor: default;
-      color: currentColor;
-      border-bottom: none;
+    &:last-child {
+      margin-right: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 170px;
+      white-space: nowrap;
+
+      &::after {
+        content: none;
+      }
+
+      a {
+        cursor: default;
+        color: currentColor;
+        border-bottom: none;
+      }
     }
   }
 
@@ -48,21 +69,4 @@
 
 h1 + .breadcrumbs {
   margin-top: -15px;
-}
-
-.breadcrumbs-item-index {
-  a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    text-indent: -1000px;
-    border-bottom: none;
-    background-image: image-set(
-      url("images/site-logo-breadcrumbs-index.png") 1x,
-      url("images/site-logo-breadcrumbs-index@2x.png") 2x
-    );
-    background-image: url("images/site-logo-breadcrumbs-index.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }

@@ -18,9 +18,12 @@
   content: "*";
 }
 
+select,
+.input-text,
 .form-control {
   padding: em(10, 15) em(17, 15);
   width: 100%;
+  min-width: 90px;
   outline: none;
   border: 2px solid $light-color-secondary;
   background-color: #fff;
@@ -30,6 +33,7 @@
   line-height: normal;
   box-sizing: border-box;
   transition: 0.3s;
+  border-radius: 0;
 
   &::placeholder {
     opacity: 1;
@@ -37,16 +41,19 @@
   }
 }
 
-textarea.form-control {
+textarea {
   max-height: 200px;
   resize: vertical;
 }
-
+select:hover,
+.input-text:hover,
 .form-control:hover {
   background-color: #fff;
   border-color: darken($light-color-secondary, 5%);
 }
 
+select:focus,
+.input-text:focus,
 .form-control:focus {
   background-color: darken(#fff, 1%);
   border-color: darken($light-color-secondary, 10%);

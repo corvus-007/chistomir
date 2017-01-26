@@ -16,8 +16,7 @@
   }
 }
 
-.button {
-  @include buttonColor($accent-color, #ffffff);
+@mixin createButton() {
   display: inline-block;
   padding: em(10, 15) em(33, 15);
   border: 2px solid transparent;
@@ -34,6 +33,13 @@
   transition: background-color 0.2s, color 0.2s;
   cursor: pointer;
   letter-spacing: 0.02em;
+  border-radius: 0;
+}
+
+.button,
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  @include createButton();
+  @include buttonColor($accent-color, #ffffff);
 
   // Small
   &--small {
@@ -45,6 +51,7 @@
   &--has-icon {
     display: inline-flex;
     align-items: center;
+    
     .svg-icon {
       margin-right: 0.5em;
     }
@@ -53,4 +60,9 @@
 
 .button--dark {
   // @include buttonColor(#2c2929);
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  display: block;
+  width: 100%;
 }

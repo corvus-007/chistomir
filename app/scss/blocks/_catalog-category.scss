@@ -38,6 +38,8 @@
 }
 
 .catalog-category__button {
+  @include createButton();
+  @include buttonColor($accent-color, #ffffff);
   display: block;
 }
 

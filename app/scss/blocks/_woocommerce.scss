@@ -1,0 +1,34 @@
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  background-color: $light-color;
+}
+
+.woocommerce-message {
+  border-color: $success-color;
+  &::before {
+    color: $success-color;
+  }
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+  background-color: $light-color;
+  border-radius: 0;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce .main-header__row .button {
+  @include createButton();
+  @include buttonColor($accent-color, #ffffff);
+}
+
+.woocommerce-page .woocommerce-billing-fields .form-row-first,
+.woocommerce-page .woocommerce-billing-fields .form-row-last {
+  float: none;
+  width: auto;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li img {
+  display: none;
+}

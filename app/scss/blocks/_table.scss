@@ -22,18 +22,30 @@ caption {
 
 th,
 td {
-  border: 1px solid $accent-color;
+  border-bottom: 1px solid $light-color-secondary;
   padding: 5px;
+}
+
+thead {
+  th,
+  td {
+    border-bottom-width: 2px;
+  }
 }
 
 tbody {
   tr {
     &:hover {
       td {
-        background-color: #f7f7f7;
+        background-color: #fbfbfb;
       }
     }
   }
+}
+
+.woocommerce table.shop_table {
+  border-radius: 0;
+  border-color: $light-color-secondary;
 }
 
 

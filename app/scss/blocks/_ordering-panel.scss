@@ -1,0 +1,10 @@
+.ordering-panel {
+  @include clearfix();
+  padding: 5px;
+  background-color: $light-color;
+
+  .woocommerce-ordering {
+    margin-bottom: 0;
+    float: none;
+  }
+}

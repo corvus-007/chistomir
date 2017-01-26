@@ -10,8 +10,22 @@
   line-height: 1;
 }
 
-.product-selling__button {
+.product-selling__button,
+.woocommerce div.product form.cart .button {
   display: block;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.woocommerce div.product form.cart .button {
+  @include createButton();
+  @include buttonColor($accent-color, #ffffff);
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.woocommerce div.product form.cart, .woocommerce div.product p.cart {
+  margin-bottom: 0;
 }
