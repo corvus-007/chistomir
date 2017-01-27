@@ -72,6 +72,10 @@
   }
 }
 
+.main-nav__user-badge {
+  margin-right: 0.25em;
+}
+
 @media (max-width: $media-laptop-down) {
   .main-nav__items {
     display: none;
