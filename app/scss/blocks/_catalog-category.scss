@@ -17,7 +17,7 @@
 }
 
 .catalog-category__image-holder {
-  @include responsiveObject(270, 225);
+  // @include responsiveObject();
   img {
 
   }
