@@ -133,16 +133,15 @@ document.addEventListener('DOMContentLoaded', function() {
   =            Contacts map            =
   ====================================*/
 
-
-
-  /*=====  End of Contacts map  ======*/
-
-
   var contactsMap = document.querySelector('#contacts-map');
 
   if (contactsMap) {
     initializeMap();
   }
+
+  /*=====  End of Contacts map  ======*/
+
+
 });
 
 
