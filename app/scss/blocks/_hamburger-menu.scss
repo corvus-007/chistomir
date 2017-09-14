@@ -8,23 +8,6 @@
  *
  */
 
-
-.mobile-menu {
-  text-decoration: none;
-  color: currentColor;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.8em;
-}
-
-.mobile-menu__icon {
-
-}
-
-.mobile-menu__text {
-  vertical-align: middle;
-}
-
 .hamburger-menu {
   align-self: center;
   display: inline-block;
@@ -85,11 +68,10 @@
     outline: none;
     color: #444;
   }
-
 }
 
-@media (min-width: $media-tablet-up) {
-  .mobile-menu {
+@media (min-width: $media-laptop-up) {
+  .hamburger-menu {
     display: none;
   }
 }

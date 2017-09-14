@@ -1,0 +1,26 @@
+.event {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.event__meta {
+  margin-left: rem(30px);
+  font-size: 15px;
+  text-align: center;
+}
+
+.event__date {
+  display: inline-block;
+  padding: rem(6) rem(16);
+  vertical-align: middle;
+  color: $base-color;
+  background-color: $light-color;
+  // border-radius: 50px;
+}
+
+.event__image {
+  margin-bottom: rem(30px);
+}

@@ -1,0 +1,64 @@
+.page {
+
+}
+
+
+
+.page-text {
+  // font-size: rem(14);
+
+  & > * + * {
+    margin-top: 1.5rem;
+    // margin-bottom: 0;
+  }
+
+  & > * + h2 {
+    margin-top: 2.4rem;
+  }
+
+  & > * + h3 {
+    margin-top: 2rem;
+  }
+
+  & > h2 + * {
+    margin-top: 0.6rem;
+  }
+
+  & > h3 + * {
+    margin-top: 0.6rem;
+  }
+
+  & > h2 + h3 {
+    margin-top: 1rem;
+  }
+
+  & > h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: rem(24);
+  }
+
+  & > h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: rem(21);
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $media-tablet-up) {
+    .alignleft {
+      float: left;
+      margin-right: 1rem;
+    }
+
+    .alignright {
+      float: right;
+      margin-left: 1rem;
+    }
+  }
+}

@@ -22,6 +22,12 @@ $.extend(true, $.magnificPopup.defaults, {
 /*=====  End of Translating magnificPopup  ======*/
 
 document.addEventListener('DOMContentLoaded', function() {
+  $('.main-header__control-toggler').on('click', function (event) {
+    event.preventDefault();
+    $('.main-header__control-dropdown').toggleClass('main-header__control-dropdown--hidden');
+  });
+
+
   /*====================================
   =            About slider            =
   ====================================*/

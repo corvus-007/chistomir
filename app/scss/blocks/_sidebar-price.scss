@@ -1,0 +1,9 @@
+.sidebar-price {
+  @include clear-list();
+
+  font-size: rem(15);
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
