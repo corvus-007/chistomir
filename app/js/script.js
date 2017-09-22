@@ -21,7 +21,7 @@ $.extend(true, $.magnificPopup.defaults, {
 
 /*=====  End of Translating magnificPopup  ======*/
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   $('.main-header__control-toggler').on('click', function (event) {
     event.preventDefault();
     $('.main-header__control-dropdown').toggleClass('main-header__control-dropdown--hidden');
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $catalogSection.each(function (index, el) {
       $(this).find('.catalog-subsection').hide();
       $(this).find('.catalog-category__toggle').show().addClass('catalog-category__toggle--closed');
-
     });
 
     var toggleBaseText = $(this).find('.catalog-category__toggle:first').text();
@@ -147,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /*=====  End of Contacts map  ======*/
 
-
+  setupYandexTargets();
 });
 
 
@@ -160,7 +159,7 @@ function initializeMap() {
 
   var contactsPlaces = document.querySelector('.contacts-places-map');
 
-  Array.prototype.forEach.call(locationPlaces, function(place, i) {
+  Array.prototype.forEach.call(locationPlaces, function (place, i) {
     var placeItem = {};
 
     if (i === 0) {
@@ -178,16 +177,16 @@ function initializeMap() {
   var mapProp = createProp(locationCenter);
   var map = new google.maps.Map(document.getElementById("contacts-map"), mapProp);
 
-  mapLocations.forEach(function(mapLocation) {
+  mapLocations.forEach(function (mapLocation) {
     addMarker(mapLocation);
   });
 
 
-  $(contactsPlaces).on('click', '[data-place-location]', function(event) {
+  $(contactsPlaces).on('click', '[data-place-location]', function (event) {
     event.preventDefault();
     $(locationPlaces).removeClass('contacts-place-map--active')
     $(this).addClass('contacts-place-map--active')
-    map.panTo( getLocationCenter(this) );
+    map.panTo(getLocationCenter(this));
   });
 
   function getLocationCenter(element) {
@@ -203,177 +202,139 @@ function initializeMap() {
       scrollwheel: false,
       disableDefaultUI: true,
       zoomControl: true,
-      styles: [
-      {
-        "elementType": "geometry",
-        "stylers": [
-        {
-          "color": "#f5f5f5"
-        }
-        ]
-      },
-      {
-        "elementType": "labels.icon",
-        "stylers": [
-        {
-          "visibility": "off"
-        }
-        ]
-      },
-      {
-        "elementType": "labels.text.fill",
-        "stylers": [
-        {
-          "color": "#616161"
-        }
-        ]
-      },
-      {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-        {
-          "color": "#f5f5f5"
-        }
-        ]
-      },
-      {
-        "featureType": "landscape.man_made",
-        "elementType": "geometry.fill",
-        "stylers": [
-        {
-          "color": "#e1e1e1"
+      styles: [{
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }]
         },
         {
-          "lightness": 30
-        }
-        ]
-      },
-      {
-        "featureType": "landscape.man_made",
-        "elementType": "labels.text",
-        "stylers": [
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
         {
-          "color": "#969696"
-        }
-        ]
-      },
-      {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#616161"
+          }]
+        },
         {
-          "color": "#eeeeee"
-        }
-        ]
-      },
-      {
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "elementType": "labels.text.stroke",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }]
+        },
         {
-          "color": "#757575"
-        }
-        ]
-      },
-      {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "landscape.man_made",
+          "elementType": "geometry.fill",
+          "stylers": [{
+              "color": "#e1e1e1"
+            },
+            {
+              "lightness": 30
+            }
+          ]
+        },
         {
-          "color": "#e5e5e5"
-        }
-        ]
-      },
-      {
-        "featureType": "poi.park",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "featureType": "landscape.man_made",
+          "elementType": "labels.text",
+          "stylers": [{
+            "color": "#969696"
+          }]
+        },
         {
-          "color": "#9e9e9e"
-        }
-        ]
-      },
-      {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#eeeeee"
+          }]
+        },
         {
-          "color": "#ffffff"
-        }
-        ]
-      },
-      {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#757575"
+          }]
+        },
         {
-          "color": "#757575"
-        }
-        ]
-      },
-      {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#e5e5e5"
+          }]
+        },
         {
-          "color": "#dadada"
-        }
-        ]
-      },
-      {
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
+        },
         {
-          "color": "#616161"
-        }
-        ]
-      },
-      {
-        "featureType": "road.local",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#ffffff"
+          }]
+        },
         {
-          "color": "#9e9e9e"
-        }
-        ]
-      },
-      {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#757575"
+          }]
+        },
         {
-          "color": "#e5e5e5"
-        }
-        ]
-      },
-      {
-        "featureType": "transit.station",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#dadada"
+          }]
+        },
         {
-          "color": "#eeeeee"
-        }
-        ]
-      },
-      {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#616161"
+          }]
+        },
         {
-          "color": "#c9c9c9"
-        }
-        ]
-      },
-      {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
+        },
         {
-          "color": "#9e9e9e"
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#e5e5e5"
+          }]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#eeeeee"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#c9c9c9"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "color": "#9e9e9e"
+          }]
         }
-        ]
-      }
       ]
     };
   }
@@ -392,4 +353,38 @@ function initializeMap() {
   }
 }
 
+function validateFormElements(item) {
+  console.log(item, !!item.value.length);
+  return !!item.value.length;
+}
 
+
+function setupYandexTargets() {
+  // Нажата кнопка "Заказать звонок"
+  $('.main-header__button').on('click', function () {
+    yaCounter45998871.reachGoal('CALLBACK_ORDER_BTN');
+  });
+  // Отправлена заявка на звонок (цель произойдет, даже если не заполнена форма)
+  $('.popup-callback .form-submit').on('click', function () {
+    yaCounter45998871.reachGoal('CALLBACK_ORDER_SEND');
+  });
+  // Добавили товар в корзину
+  $('.single_add_to_cart_button').on('click', function () {
+    yaCounter45998871.reachGoal('ADD_TO_CART');
+  });
+  // Перешли в корзину
+  $('.woocommerce-message .wc-forward').on('click', function () {
+    yaCounter45998871.reachGoal('GO_TO_CART');
+  });
+  $('.main-nav__user-link').on('click', function () {
+    yaCounter45998871.reachGoal('GO_TO_CART');
+  });
+  // Отправлен заказ
+  $('.woocommerce-checkout').on('submit', function () {
+    // var isValidateForm = Array.from(document.querySelectorAll('.woocommerce-checkout input')).every(validateFormElements);
+    // console.log(isValidateForm);
+    // if (isValidateForm) {
+      yaCounter45998871.reachGoal('SEND_ORDER');
+    // }
+  });
+}
