@@ -1,0 +1,15 @@
+.form-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: rem(12);
+  line-height: 1.2;
+  text-align: left;
+  hyphens: auto;
+  color: $muted-color;
+
+  input {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+}
