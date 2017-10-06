@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeMap() {
   var mapLocations = [];
   var locationPlaces = document.querySelectorAll('[data-place-location]');
-  var ICONPATH = 'images/svg-icons/pin.svg';
+  var ICONPATH = (location.hostname === 'localhost') ? './images/svg-icons/pin.svg' : '/wp-content/themes/chistomir/images/svg-icons/pin.svg';
   var locationCenter = null;
 
   var contactsPlaces = document.querySelector('.contacts-places-map');
@@ -384,7 +384,7 @@ function setupYandexTargets() {
     // var isValidateForm = Array.from(document.querySelectorAll('.woocommerce-checkout input')).every(validateFormElements);
     // console.log(isValidateForm);
     // if (isValidateForm) {
-      yaCounter45998871.reachGoal('SEND_ORDER');
+    yaCounter45998871.reachGoal('SEND_ORDER');
     // }
   });
 }
