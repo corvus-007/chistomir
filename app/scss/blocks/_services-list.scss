@@ -10,6 +10,12 @@
   text-align: center;
 }
 
+.services-item__link {
+  display: block;
+  color: $base-color;
+  transition: ($duration * 1.5);
+}
+
 .services-item__icon-holder {
   margin-bottom: 15px;
   position: relative;
@@ -27,12 +33,22 @@
     border-radius: 50%;
     background-color: $primary-color-light;
     z-index: -1;
+    transition: ($duration * 2);
+  }
+}
+
+.services-item__link:hover .services-item__icon-holder,
+.services-item__link:focus .services-item__icon-holder {
+  &::before {
+    transform: scale(3);
+    opacity: 0.05;
   }
 }
 
 .services-item__icon {
   width: rem(64);
   height: rem(64);
+  color: $base-color;
 }
 
 .services-item__title {
