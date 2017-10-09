@@ -184,8 +184,8 @@ function initializeMap() {
 
   $(contactsPlaces).on('click', '[data-place-location]', function (event) {
     event.preventDefault();
-    $(locationPlaces).removeClass('contacts-place-map--active')
-    $(this).addClass('contacts-place-map--active')
+    $(locationPlaces).removeClass('contacts-place-map--active');
+    $(this).addClass('contacts-place-map--active');
     map.panTo(getLocationCenter(this));
   });
 
