@@ -18,9 +18,13 @@
   vertical-align: middle;
   color: $base-color;
   background-color: $light-color;
-  // border-radius: 50px;
 }
 
 .event__image {
   margin-bottom: rem(30px);
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }
