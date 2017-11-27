@@ -8,10 +8,6 @@
   h2 {
     margin-top: 0;
   }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .index-about__image-area {
@@ -22,12 +18,14 @@
 
 .index-about__image-holder {
   @include responsiveObject();
+
   border-radius: 50%;
 }
 
 .index-about__image-caption {
   text-align: center;
   margin-top: 0.5em;
+
   span {
     font-size: 0.8em;
     display: block;
@@ -36,7 +34,13 @@
 
 
 .index-about__text-area {
+  & > :first-child {
+    margin-top: 0;
+  }
 
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 667px) {
@@ -76,7 +80,4 @@
   .index-about__text-area {
     margin-left: $sidebar-width;
   }
-
 }
-
-
