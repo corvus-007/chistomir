@@ -14,10 +14,14 @@
 
 .product__column-main-photo {
   text-align: center;
+
+  img {
+    max-height: 550px;
+  }
 }
 
 .product__column-summary {
-  
+
 }
 
 @media (min-width: $media-mobile-up) {
@@ -41,12 +45,12 @@
 
 @media (min-width: $media-tablet-up) {
   .product__columns {
-    
+
   }
 
   .product__column-main-photo {
     @include createFlexColumn(7);
-    
+
   }
 
   .product__column-summary {
