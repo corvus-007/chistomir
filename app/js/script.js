@@ -128,9 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
     removalDelay: 300,
     gallery: {
       enabled: true
-    },
-    retina: {
-      ratio: 2
     }
   });
 
